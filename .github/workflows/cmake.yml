@@ -41,13 +41,20 @@ jobs:
         additionalCachedPaths: ${{ env.buildDir }}/vcpkg_installed
         
     - name: 'Run CMake with Ninja, install dependencies with vcpkg, build with CMake'
-      uses: lukka/run-cmake@v3
+      uses: lukka/run-cmake@v10
       with:
         cmakeListsOrSettingsJson: CMakeListsTxtBasic
         cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
         useVcpkgToolchainFile: true
         cmakeAppendedArgs: '-GNinja -DENABLE_GTEST=ON'
         buildDirectory: ${{ env.buildDir }}
+        # This is the name of the CMakePresets.json's configuration to use to generate
+        # the project files. This configuration leverages the vcpkg.cmake toolchain file to
+        # run vcpkg and install all dependencies specified in vcpkg.json.
+        configurePreset: 'ninja-multi-vcpkg'
+
+        # This is the name of the CMakePresets.json's configuration to build the project.
+        buildPreset: 'ninja-multi-vcpkg'
 
     - name: Test
       working-directory: ${{github.workspace}}/build

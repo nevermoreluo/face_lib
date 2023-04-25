@@ -1,20 +1,22 @@
 
+[![Build Status](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml)
+
 ### 目的
 由于工作中频繁遇到很多第三方的人脸识别方案需要整合，因此考虑自己造轮子看下实现复杂度以及方便后续项目开展时做一个备选方案。
 
 
 ### 主要功能
 目前主要需要实现对比两张静态图片人脸识别
-实现：
+实现：  
 依赖opencv读取图片信息，使用dlib将图片中的人脸特征值提取出来（建议将基础对照的人脸姓名和人脸特征值另外存储），使用dlib::length对比两张人脸特征值的差值超过阈值即认为相同
 
-使用：
+使用：  
 GetFaceFeatureFromImg从图片读取生成人脸特征值，用户可以选择使用EncodeFaceFeature存储以及下次加载特征值，获取特征值后对比得到相似度，推荐使用IsMatched函数对比
 
 
 
 ### TODO
-阈值还需要进一步测试调整，可能`res/test_faces`中的网图精修过度了，需要一些实例图片进一步调整以下阈值，进一步测试确定
+阈值还需要进一步测试调整，可能`res/test_faces`中的网图精修过度了，需要一些实例图片进一步调整以下阈值，进一步测试确定  
 ~~其实可以进一步通过特征值位置做进一步的活体检测，张嘴眨眼等活体检测~~
 
 ### 依赖
