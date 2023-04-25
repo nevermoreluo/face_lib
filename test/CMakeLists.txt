@@ -31,3 +31,7 @@ if (MSVC)
 endif()
 
 
+enable_testing()
+
+add_test(gtest ${PROJECT_NAME})
+
