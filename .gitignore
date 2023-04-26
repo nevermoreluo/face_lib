@@ -51,7 +51,7 @@ include/divisible/*
 .idea/*.xml
 
 build/**/*
-
+builds/*
 include/*
 lib/*
 bin/*

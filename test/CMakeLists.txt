@@ -4,7 +4,7 @@ project(Google_Tests_run)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MT")
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
-include_directories(../lib)
+include_directories(../src)
 
 
 file(GLOB_RECURSE Tests_Sources ./*.h ./*.cpp ./*.c)
