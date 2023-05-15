@@ -58,7 +58,3 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.build-type}}
 
-    - name: Doxygen Action
-      uses: mattnotmitt/doxygen-action@1.9.5
-
-
