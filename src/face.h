@@ -54,55 +54,148 @@ namespace face
 
 
     // ----------------------------------------------------------------------------------------
-
+    /**
+     * @brief A face recognition class that provides methods for recognizing faces and managing known faces.
+     */
     class FaceRecognizer
     {
     public:
 
+        /**
+         * @brief Gets the face feature vector from an image file.
+         *
+         * @param image_path A string representing the path to the image file.
+         * @return The face feature vector as a vector of floats.
+         */
         face_features_t GetFaceFeatureFromImg(const std::string& image_path);
 
-
+        /**
+         * @brief Calculates the similarity between a given face feature and an image file.
+         *
+         * @param face_feature1 A string representing the face feature to compare.
+         * @param image_path A string representing the path to the image file to compare against.
+         * @return The similarity score between the face feature and the image file, as a float.
+         */
         float GetSimilarityFromImg(const std::string& face_feature1, const std::string& image_path);
 
+        /**
+         * @brief Recognizes a face from an image file by comparing it against a list of known faces.
+         *
+         * @param image_path A string representing the path to the image file.
+         * @param name The name of the recognized face, passed by reference.
+         * @param break_if_first_matched A boolean indicating whether to stop searching for matches after the first match is found.
+         * @return An integer indicating the number of matches found.
+         */
         int RecognizeImgByKnownFaces(const std::string& image_path, std::string& name, bool break_if_first_matched = true);
 
+
+        /**
+         * @brief Adds a set of known face features to the list of known faces.
+         *
+         * @param known_face_name The name of the known face.
+         * @param face_features The face feature vector as a vector of floats.
+         */
         void AddKnownFaceFeatures(std::string known_face_name, face_features_t face_features);
 
+        /**
+         * @brief Adds a set of known face features to the list of known faces.
+         *
+         * @param known_face_name The name of the known face.
+         * @param face_features A string representing the face feature vector.
+         */
         void AddKnownFaceFeatures(std::string known_face_name, const std::string& face_features);
 
+
+        /**
+         * @brief Gets the face feature vectors from an image file.
+         *
+         * @param image_path A string representing the path to the image file.
+         * @return A vector of face feature vectors, each represented as a vector of floats.
+         *
+         * This function returns a vector of face feature vectors extracted from the specified image file.
+         * This function can be time-consuming, taking 4-500ms to complete.
+         */
         // TODO this func spent most time, it takes 4~500ms
         std::vector<face_features_t> GetQueryFaceFeaturesFromImg(const std::string& image_path);
 
+        /**
+         * @brief Calculates the similarity between a given face feature and a list of query face features.
+         *
+         * @param face_feature_str A string representing the face feature to compare.
+         * @param query_face_features A vector of query face features, each represented as a vector of floats.
+         * @return The similarity score between the face feature and the query face features, as a float.
+         */
         float GetSimilarity(const std::string& face_feature_str, std::vector<face_features_t> query_face_features);
 
+
+        /**
+         * @brief Calculates the similarity between a given face feature and a list of query face features.
+         *
+         * @param face_feature A reference to the face feature to compare.
+         * @param query_face_features A vector of query face features, each represented as a vector of floats.
+         * @return The similarity score between the face feature and the query face features, as a float.
+         */
         float GetSimilarity(face_features_t& face_feature, std::vector<face_features_t> query_face_features);
 
+
+        /**
+         * @brief Checks whether a given face feature matches any of the query face features.
+         *
+         * @param face_feature_str A string representing the face feature to compare.
+         * @param query_face_features A vector of query face features, each represented as a vector of floats.
+         * @return A boolean indicating whether a match was found.
+         */
         bool Match(const std::string& face_feature_str, std::vector<face_features_t> query_face_features);
 
+
+        /**
+         * @brief Checks whether a given face feature matches any of the query face features.
+         *
+         * @param face_feature A reference to the face feature to compare.
+         * @param query_face_features A vector of query face features, each represented as a vector of floats.
+         * @return A boolean indicating whether a match was found.
+         */
         bool Match(face_features_t& face_feature, std::vector<face_features_t> query_face_features);
 
     public:
-        // note buffer type return, be careful with data storage, 
-        // Need save the string as a binary blob in the database
-        // or use base64 encoding
-        // Example pseudocode:
-        // db.execute("INSERT INTO faces (name, feature) VALUES (?, ?)", "Alice", face_feature_str.data(), face_feature_str.size());
+        /**
+         * @brief Encodes a face feature vector as a string.
+         *
+         * @param face_features The face feature vector as a vector of floats.
+         * @return A string representing the encoded face feature vector.
+         *
+         * This function encodes a face feature vector into a string using a binary format.
+         * The resulting string can be stored in a database as a binary blob.
+         */
         static std::string EncodeFaceFeature(face_features_t face_features);
 
+        /**
+         * @brief Decodes a face feature vector from a string.
+         *
+         * @param face_features_str A string representing the encoded face feature vector.
+         * @return The decoded face feature vector as a vector of floats.
+         *
+         * This function decodes a face feature vector from a string that was encoded using the EncodeFaceFeature function.
+         */
         static face_features_t DecodeFaceFeature(const std::string& face_features_str);
 
 
-        // the smaller the better
+        /**
+         * @brief Checks whether a given similarity score indicates a match.
+         *
+         * @param sim The similarity score to check.
+         * @return A boolean indicating whether the similarity score indicates a match.
+         * the smaller the better
+         */
         static inline bool IsMatched(float sim) { return sim < matched_max_threshold; }
 
-        /*
-        #   When using a distance threshold of 0.6, the dlib model obtains an accuracy
-        #   of 99.38 % on the standard LFW face recognition benchmark, which is
-        #   comparable to other state - of - the - art methods for face recognition as of
-        #   February 2017. This accuracy means that, when presented with a pair of face
-        #   images, the tool will correctly identify if the pair belongs to the same
-        #   person or is from different people 99.38 % of the time.
-        */
+        /**
+         * @brief The maximum similarity threshold that indicates a match.
+         *
+         * This static member variable specifies the maximum similarity threshold that indicates a match.
+         * The default value is set to the threshold used by the dlib face recognition model, which achieves
+         * an accuracy of 99.38% on the LFW face recognition benchmark.
+         */
         static float matched_max_threshold;
 
     protected:
