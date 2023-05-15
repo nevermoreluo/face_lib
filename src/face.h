@@ -60,7 +60,6 @@ namespace face
     class FaceRecognizer
     {
     public:
-
         /**
          * @brief Gets the face feature vector from an image file.
          *
@@ -199,7 +198,6 @@ namespace face
         static float matched_max_threshold;
 
     protected:
-
         dlib::shape_predictor& GetLandmarkDetector() {
             std::call_once(sp_init_flag_, &FaceRecognizer::InitLandmarkDetector, this);
             return sp_;

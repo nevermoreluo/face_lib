@@ -1,5 +1,8 @@
 
+[![CodeFactor](https://www.codefactor.io/repository/github/nevermoreluo/face_lib/badge)](https://www.codefactor.io/repository/github/nevermoreluo/face_lib)
 [![Build Status](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml)
+[![Doc Status](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml)
+
 
 ### 目的
 由于工作中频繁遇到很多第三方的人脸识别方案需要整合，因此考虑自己造轮子看下实现复杂度以及方便后续项目开展时做一个备选方案。
@@ -30,25 +33,4 @@ GetFaceFeatureFromImg从图片读取生成人脸特征值，用户可以选择�
 
 
 ### 相关使用方式
-face::FaceRecognizer 是一个使用 dlib 库提供人脸识别功能的 C++ 类。它允许用户在图像中检测人脸、提取面部特征、比较面部特征以及将人脸与已知个体匹配。
-
-要使用 FaceRecognizer，用户可以创建该类的一个实例，并调用其方法来执行各种人脸识别任务。该类提供以下方法：
-
-- GetFaceFeatureFromImg(image_path)：以图像文件路径作为输入，返回该图像中检测到的面部特征的字符串表示。
-
-- GetSimilarityFromImg(face_feature1, image_path)：以面部特征的字符串表示和图像文件路径作为输入，返回两者之间的相似度得分。
-
-- RecognizeImgByKnownFaces(image_path, name, break_if_first_matched)：以图像文件路径作为输入，将检测到的面部特征与已知面孔的缓存进行比较，并返回最佳匹配的名称。如果 break_if_first_matched 设置为 true，则函数在找到第一个匹配项后将停止搜索。
-
-- AddKnownFaceFeatures(known_face_name, face_features)：将面部特征的字符串表示添加到已知面孔的缓存中，并与给定的名称相关联。
-
-- AddKnownFaceFeatures(known_face_name, face_features_str)：与上述相同，但以字符串表示的面部特征为输入。
-
-- EncodeFaceFeature(face_features)：以面部特征的向量作为输入，返回这些特征的二进制字符串表示。
-
-- DecodeFaceFeature(face_features_str)：以二进制字符串表示的面部特征作为输入，返回这些特征的向量。
-
-该类还提供了一个静态变量 matched_max_threshold，它是两个面孔被认为不匹配的相似度阈值。该变量的默认值为 0.4
-
-要使用该类，用户可以创建一个该类的实例，并根据需要调用其方法。他们可以使用 AddKnownFaceFeatures 将已知面孔添加到已知面孔的缓存中，然后使用 RecognizeImgByKnownFaces 将新的面孔与缓存中的面孔做匹配。他们还可以使用 GetSimilarityFromImg 和 IsMatched 直接比较和匹配面孔。
-
+[Docs](https://nevermoreluo.github.io/face_lib/classface_1_1FaceRecognizer.html)

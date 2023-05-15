@@ -42,9 +42,7 @@ TEST(FaceCheck, BasicAssertions) {
 
     //std::string face_name_1_3;
     //EXPECT_EQ(0, fr.RecognizeImgByKnownFaces(f_image_path_1_3, face_name_1_3));
-    //EXPECT_EQ(base_face_name, face_name_1_3);
-    
-    
+    //EXPECT_EQ(base_face_name, face_name_1_3);    
 }
 
 
