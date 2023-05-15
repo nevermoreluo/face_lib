@@ -57,6 +57,13 @@
       "displayName": "Build ninja-multi-vcpkg",
       "description": "Build Release configuration",
       "configuration": "Release"
+    },
+    {
+      "name": "x86-release",
+      "configurePreset": "x86-release",
+      "displayName": "Build x86-release",
+      "description": "Build Release configuration",
+      "configuration": "Release"
     }
   ]
 }
