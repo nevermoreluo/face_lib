@@ -34,3 +34,5 @@ GetFaceFeatureFromImg从图片读取生成人脸特征值，用户可以选择�
 
 数据集文件可以在http://dlib.net/files/下载也可以在项目的res目录内获得
 
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib?ref=badge_large)
