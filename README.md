@@ -1,6 +1,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/nevermoreluo/face_lib/badge)](https://www.codefactor.io/repository/github/nevermoreluo/face_lib)
 [![Build Status](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml)
 [![Doc Status](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml)
+[![Cpplint Status](https://github.com/nevermoreluo/face_lib/actions/workflows/cpplint.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/cpplint.yml)
 [![LICENSE](https://img.shields.io/github/license/nevermoreluo/face_lib?style=plastic)](https://github.com/nevermoreluo/face_lib/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nevermoreluo/face_lib?style=plastic)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib?ref=badge_shield)
