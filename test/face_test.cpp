@@ -1,9 +1,10 @@
-//
-// Created by SG220 on 2023/4/11.
-//
+/*
+    Copyright(c) 2023 Nevermore
+*/
+#include "src/face.h"
 
 #include <gtest/gtest.h>
-#include "face.h"
+
 
 TEST(FaceCheck, BasicAssertions) {
     // base check
@@ -37,12 +38,12 @@ TEST(FaceCheck, BasicAssertions) {
     fr.AddKnownFaceFeatures(base_face_name, base_feature);
 
     std::string face_name;
-    EXPECT_EQ(0, fr.RecognizeImgByKnownFaces(f_image_path_1_2, face_name));
+    EXPECT_EQ(0, fr.RecognizeImgByKnownFaces(f_image_path_1_2, &face_name));
     EXPECT_EQ(base_face_name, face_name);
 
-    //std::string face_name_1_3;
-    //EXPECT_EQ(0, fr.RecognizeImgByKnownFaces(f_image_path_1_3, face_name_1_3));
-    //EXPECT_EQ(base_face_name, face_name_1_3);    
+    // std::string face_name_1_3;
+    // EXPECT_EQ(0, fr.RecognizeImgByKnownFaces(f_image_path_1_3, face_name_1_3));
+    // EXPECT_EQ(base_face_name, face_name_1_3);
 }
 
 

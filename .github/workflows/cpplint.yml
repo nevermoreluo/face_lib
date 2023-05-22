@@ -1,0 +1,32 @@
+name: cpplint
+
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  cpplint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+    - run: pip install cpplint
+    - run: cpplint --linelength=120 --recursive --exclude=out\* --exclude=cmake-* .
+  #fossa-scan:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v3
+  #    - name: Download fossa cli
+  #      run: curl https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+  #    - name: Upload dependencies
+  #      run: fossa analyze --detect-vendored
+  #      env:
+  #        FOSSA_API_KEY: ${{ secrets.fossaApiKey }}

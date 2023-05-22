@@ -4,6 +4,8 @@
 cmake_minimum_required (VERSION 3.14)
 project(face)
 
+include_directories(../)
+
 add_library(${PROJECT_NAME} STATIC face.cpp face.h)
 
 find_package(dlib CONFIG REQUIRED)
