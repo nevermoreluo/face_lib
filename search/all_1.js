@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['decodefacefeature_0',['DecodeFaceFeature',['../classface_1_1FaceRecognizer.html#ac629a5d5487a793ddd305ee6f5ff6b34',1,'face::FaceRecognizer']]]
+  ['decodefacefeature_0',['DecodeFaceFeature',['../classface_1_1FaceRecognizer.html#a70aab59c6fc5ad1fa3414c6aa5889a17',1,'face::FaceRecognizer']]]
 ];

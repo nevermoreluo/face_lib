@@ -90,54 +90,54 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3587174a85d7ff4c06d0e3e6d593f59"><td class="memItemLeft" align="right" valign="top">face_features_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ae3587174a85d7ff4c06d0e3e6d593f59">GetFaceFeatureFromImg</a> (const std::string &amp;image_path)</td></tr>
-<tr class="memdesc:ae3587174a85d7ff4c06d0e3e6d593f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the face feature vector from an image file.  <a href="classface_1_1FaceRecognizer.html#ae3587174a85d7ff4c06d0e3e6d593f59">More...</a><br /></td></tr>
-<tr class="separator:ae3587174a85d7ff4c06d0e3e6d593f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ee850ef0fc38a2ccad362d8d88095f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a88ee850ef0fc38a2ccad362d8d88095f">GetSimilarityFromImg</a> (const std::string &amp;face_feature1, const std::string &amp;image_path)</td></tr>
-<tr class="memdesc:a88ee850ef0fc38a2ccad362d8d88095f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and an image file.  <a href="classface_1_1FaceRecognizer.html#a88ee850ef0fc38a2ccad362d8d88095f">More...</a><br /></td></tr>
-<tr class="separator:a88ee850ef0fc38a2ccad362d8d88095f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af808bf25178514d19af2eaedc805fdf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#af808bf25178514d19af2eaedc805fdf4">RecognizeImgByKnownFaces</a> (const std::string &amp;image_path, std::string &amp;name, bool break_if_first_matched=true)</td></tr>
-<tr class="memdesc:af808bf25178514d19af2eaedc805fdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recognizes a face from an image file by comparing it against a list of known faces.  <a href="classface_1_1FaceRecognizer.html#af808bf25178514d19af2eaedc805fdf4">More...</a><br /></td></tr>
-<tr class="separator:af808bf25178514d19af2eaedc805fdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae41049a0e59e7caef063434cd3e14e5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ae41049a0e59e7caef063434cd3e14e5c">AddKnownFaceFeatures</a> (std::string known_face_name, face_features_t face_features)</td></tr>
-<tr class="memdesc:ae41049a0e59e7caef063434cd3e14e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of known face features to the list of known faces.  <a href="classface_1_1FaceRecognizer.html#ae41049a0e59e7caef063434cd3e14e5c">More...</a><br /></td></tr>
-<tr class="separator:ae41049a0e59e7caef063434cd3e14e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40fd708b95bb548290eae11565c8a9ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a40fd708b95bb548290eae11565c8a9ff">AddKnownFaceFeatures</a> (std::string known_face_name, const std::string &amp;face_features)</td></tr>
-<tr class="memdesc:a40fd708b95bb548290eae11565c8a9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of known face features to the list of known faces.  <a href="classface_1_1FaceRecognizer.html#a40fd708b95bb548290eae11565c8a9ff">More...</a><br /></td></tr>
-<tr class="separator:a40fd708b95bb548290eae11565c8a9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54cc8c73454b1c1877b8f7e0b5c54a5f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; face_features_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a54cc8c73454b1c1877b8f7e0b5c54a5f">GetQueryFaceFeaturesFromImg</a> (const std::string &amp;image_path)</td></tr>
-<tr class="memdesc:a54cc8c73454b1c1877b8f7e0b5c54a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the face feature vectors from an image file.  <a href="classface_1_1FaceRecognizer.html#a54cc8c73454b1c1877b8f7e0b5c54a5f">More...</a><br /></td></tr>
-<tr class="separator:a54cc8c73454b1c1877b8f7e0b5c54a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab46a4fecec89686891205194a5c9af3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#aab46a4fecec89686891205194a5c9af3">GetSimilarity</a> (const std::string &amp;face_feature_str, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
-<tr class="memdesc:aab46a4fecec89686891205194a5c9af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and a list of query face features.  <a href="classface_1_1FaceRecognizer.html#aab46a4fecec89686891205194a5c9af3">More...</a><br /></td></tr>
-<tr class="separator:aab46a4fecec89686891205194a5c9af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd2907a1c061eff3feaff137121051a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a6fd2907a1c061eff3feaff137121051a">GetSimilarity</a> (face_features_t &amp;face_feature, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
-<tr class="memdesc:a6fd2907a1c061eff3feaff137121051a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and a list of query face features.  <a href="classface_1_1FaceRecognizer.html#a6fd2907a1c061eff3feaff137121051a">More...</a><br /></td></tr>
-<tr class="separator:a6fd2907a1c061eff3feaff137121051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f40a7cb5b349c9aeb366d37c34614b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a14f40a7cb5b349c9aeb366d37c34614b">Match</a> (const std::string &amp;face_feature_str, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
-<tr class="memdesc:a14f40a7cb5b349c9aeb366d37c34614b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given face feature matches any of the query face features.  <a href="classface_1_1FaceRecognizer.html#a14f40a7cb5b349c9aeb366d37c34614b">More...</a><br /></td></tr>
-<tr class="separator:a14f40a7cb5b349c9aeb366d37c34614b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e89859a7ffd80488df53f24d1d61580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a4e89859a7ffd80488df53f24d1d61580">Match</a> (face_features_t &amp;face_feature, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
-<tr class="memdesc:a4e89859a7ffd80488df53f24d1d61580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given face feature matches any of the query face features.  <a href="classface_1_1FaceRecognizer.html#a4e89859a7ffd80488df53f24d1d61580">More...</a><br /></td></tr>
-<tr class="separator:a4e89859a7ffd80488df53f24d1d61580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd1ef0727490e1abb650ecc43718ff3"><td class="memItemLeft" align="right" valign="top">face_features_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a9bd1ef0727490e1abb650ecc43718ff3">GetFaceFeatureFromImg</a> (const std::string &amp;image_path)</td></tr>
+<tr class="memdesc:a9bd1ef0727490e1abb650ecc43718ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the face feature vector from an image file.  <a href="classface_1_1FaceRecognizer.html#a9bd1ef0727490e1abb650ecc43718ff3">More...</a><br /></td></tr>
+<tr class="separator:a9bd1ef0727490e1abb650ecc43718ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2763c641c2314eebba5c2f28984b46de"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a2763c641c2314eebba5c2f28984b46de">GetSimilarityFromImg</a> (const std::string &amp;face_feature1, const std::string &amp;image_path)</td></tr>
+<tr class="memdesc:a2763c641c2314eebba5c2f28984b46de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and an image file.  <a href="classface_1_1FaceRecognizer.html#a2763c641c2314eebba5c2f28984b46de">More...</a><br /></td></tr>
+<tr class="separator:a2763c641c2314eebba5c2f28984b46de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3f67a72000a11128e859f97c2c1be6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a1b3f67a72000a11128e859f97c2c1be6">RecognizeImgByKnownFaces</a> (const std::string &amp;image_path, std::string *name, bool break_if_first_matched=true)</td></tr>
+<tr class="memdesc:a1b3f67a72000a11128e859f97c2c1be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recognizes a face from an image file by comparing it against a list of known faces.  <a href="classface_1_1FaceRecognizer.html#a1b3f67a72000a11128e859f97c2c1be6">More...</a><br /></td></tr>
+<tr class="separator:a1b3f67a72000a11128e859f97c2c1be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ced49c8b186f6e8a56f509a859c6cbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a6ced49c8b186f6e8a56f509a859c6cbc">AddKnownFaceFeatures</a> (std::string known_face_name, face_features_t face_features)</td></tr>
+<tr class="memdesc:a6ced49c8b186f6e8a56f509a859c6cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of known face features to the list of known faces.  <a href="classface_1_1FaceRecognizer.html#a6ced49c8b186f6e8a56f509a859c6cbc">More...</a><br /></td></tr>
+<tr class="separator:a6ced49c8b186f6e8a56f509a859c6cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3aece00987f343d57cd466c1e3142b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#afb3aece00987f343d57cd466c1e3142b">AddKnownFaceFeatures</a> (std::string known_face_name, const std::string &amp;face_features)</td></tr>
+<tr class="memdesc:afb3aece00987f343d57cd466c1e3142b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of known face features to the list of known faces.  <a href="classface_1_1FaceRecognizer.html#afb3aece00987f343d57cd466c1e3142b">More...</a><br /></td></tr>
+<tr class="separator:afb3aece00987f343d57cd466c1e3142b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250ed7f38347dde4cc1a0221b52db738"><td class="memItemLeft" align="right" valign="top">std::vector&lt; face_features_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a250ed7f38347dde4cc1a0221b52db738">GetQueryFaceFeaturesFromImg</a> (const std::string &amp;image_path)</td></tr>
+<tr class="memdesc:a250ed7f38347dde4cc1a0221b52db738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the face feature vectors from an image file.  <a href="classface_1_1FaceRecognizer.html#a250ed7f38347dde4cc1a0221b52db738">More...</a><br /></td></tr>
+<tr class="separator:a250ed7f38347dde4cc1a0221b52db738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672430969fac5411a1bbc3480d44a8fe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a672430969fac5411a1bbc3480d44a8fe">GetSimilarity</a> (const std::string &amp;face_feature_str, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
+<tr class="memdesc:a672430969fac5411a1bbc3480d44a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and a list of query face features.  <a href="classface_1_1FaceRecognizer.html#a672430969fac5411a1bbc3480d44a8fe">More...</a><br /></td></tr>
+<tr class="separator:a672430969fac5411a1bbc3480d44a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d82ea9ead4d51457512ba7663fa68b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#aa4d82ea9ead4d51457512ba7663fa68b">GetSimilarity</a> (const face_features_t &amp;face_feature, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
+<tr class="memdesc:aa4d82ea9ead4d51457512ba7663fa68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the similarity between a given face feature and a list of query face features.  <a href="classface_1_1FaceRecognizer.html#aa4d82ea9ead4d51457512ba7663fa68b">More...</a><br /></td></tr>
+<tr class="separator:aa4d82ea9ead4d51457512ba7663fa68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf104d7d5d2729a8dfde58c49b44af05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#abf104d7d5d2729a8dfde58c49b44af05">Match</a> (const std::string &amp;face_feature_str, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
+<tr class="memdesc:abf104d7d5d2729a8dfde58c49b44af05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given face feature matches any of the query face features.  <a href="classface_1_1FaceRecognizer.html#abf104d7d5d2729a8dfde58c49b44af05">More...</a><br /></td></tr>
+<tr class="separator:abf104d7d5d2729a8dfde58c49b44af05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ed85793aaa5bc152aad810339f419f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ac3ed85793aaa5bc152aad810339f419f">Match</a> (const face_features_t &amp;face_feature, std::vector&lt; face_features_t &gt; query_face_features)</td></tr>
+<tr class="memdesc:ac3ed85793aaa5bc152aad810339f419f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given face feature matches any of the query face features.  <a href="classface_1_1FaceRecognizer.html#ac3ed85793aaa5bc152aad810339f419f">More...</a><br /></td></tr>
+<tr class="separator:ac3ed85793aaa5bc152aad810339f419f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1e32cc49a43c7407e5693a3b2527969"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ab1e32cc49a43c7407e5693a3b2527969">EncodeFaceFeature</a> (face_features_t face_features)</td></tr>
-<tr class="memdesc:ab1e32cc49a43c7407e5693a3b2527969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a face feature vector as a string.  <a href="classface_1_1FaceRecognizer.html#ab1e32cc49a43c7407e5693a3b2527969">More...</a><br /></td></tr>
-<tr class="separator:ab1e32cc49a43c7407e5693a3b2527969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac629a5d5487a793ddd305ee6f5ff6b34"><td class="memItemLeft" align="right" valign="top">static face_features_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ac629a5d5487a793ddd305ee6f5ff6b34">DecodeFaceFeature</a> (const std::string &amp;face_features_str)</td></tr>
-<tr class="memdesc:ac629a5d5487a793ddd305ee6f5ff6b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a face feature vector from a string.  <a href="classface_1_1FaceRecognizer.html#ac629a5d5487a793ddd305ee6f5ff6b34">More...</a><br /></td></tr>
-<tr class="separator:ac629a5d5487a793ddd305ee6f5ff6b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84e150680082ea19aedd25e7f012c5f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#ad84e150680082ea19aedd25e7f012c5f">EncodeFaceFeature</a> (face_features_t face_features)</td></tr>
+<tr class="memdesc:ad84e150680082ea19aedd25e7f012c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a face feature vector as a string.  <a href="classface_1_1FaceRecognizer.html#ad84e150680082ea19aedd25e7f012c5f">More...</a><br /></td></tr>
+<tr class="separator:ad84e150680082ea19aedd25e7f012c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70aab59c6fc5ad1fa3414c6aa5889a17"><td class="memItemLeft" align="right" valign="top">static face_features_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a70aab59c6fc5ad1fa3414c6aa5889a17">DecodeFaceFeature</a> (const std::string &amp;face_features_str)</td></tr>
+<tr class="memdesc:a70aab59c6fc5ad1fa3414c6aa5889a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a face feature vector from a string.  <a href="classface_1_1FaceRecognizer.html#a70aab59c6fc5ad1fa3414c6aa5889a17">More...</a><br /></td></tr>
+<tr class="separator:a70aab59c6fc5ad1fa3414c6aa5889a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b53de0f19232fadb2c7f2e354a37faf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a4b53de0f19232fadb2c7f2e354a37faf">IsMatched</a> (float sim)</td></tr>
 <tr class="memdesc:a4b53de0f19232fadb2c7f2e354a37faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given similarity score indicates a match.  <a href="classface_1_1FaceRecognizer.html#a4b53de0f19232fadb2c7f2e354a37faf">More...</a><br /></td></tr>
 <tr class="separator:a4b53de0f19232fadb2c7f2e354a37faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:adef00ac0afd0801baf0bad941a246213"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#adef00ac0afd0801baf0bad941a246213">matched_max_threshold</a> = 0.4</td></tr>
-<tr class="memdesc:adef00ac0afd0801baf0bad941a246213"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum similarity threshold that indicates a match.  <a href="classface_1_1FaceRecognizer.html#adef00ac0afd0801baf0bad941a246213">More...</a><br /></td></tr>
-<tr class="separator:adef00ac0afd0801baf0bad941a246213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01db85b8df6ed6e84e04d29634026fdf"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classface_1_1FaceRecognizer.html#a01db85b8df6ed6e84e04d29634026fdf">matched_max_threshold</a> = 0.4</td></tr>
+<tr class="memdesc:a01db85b8df6ed6e84e04d29634026fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum similarity threshold that indicates a match.  <a href="classface_1_1FaceRecognizer.html#a01db85b8df6ed6e84e04d29634026fdf">More...</a><br /></td></tr>
+<tr class="separator:a01db85b8df6ed6e84e04d29634026fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -149,16 +149,16 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A face recognition class that provides methods for recognizing faces and managing known faces. </p>
 
-<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00060">60</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00079">79</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a40fd708b95bb548290eae11565c8a9ff" name="a40fd708b95bb548290eae11565c8a9ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40fd708b95bb548290eae11565c8a9ff">&#9670;&#160;</a></span>AddKnownFaceFeatures() <span class="overload">[1/2]</span></h2>
+<a id="afb3aece00987f343d57cd466c1e3142b" name="afb3aece00987f343d57cd466c1e3142b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3aece00987f343d57cd466c1e3142b">&#9670;&#160;</a></span>AddKnownFaceFeatures() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FaceRecognizer::AddKnownFaceFeatures </td>
+          <td class="memname">void face::FaceRecognizer::AddKnownFaceFeatures </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>known_face_name</em>, </td>
@@ -186,18 +186,18 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00185">185</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00186">186</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae41049a0e59e7caef063434cd3e14e5c" name="ae41049a0e59e7caef063434cd3e14e5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae41049a0e59e7caef063434cd3e14e5c">&#9670;&#160;</a></span>AddKnownFaceFeatures() <span class="overload">[2/2]</span></h2>
+<a id="a6ced49c8b186f6e8a56f509a859c6cbc" name="a6ced49c8b186f6e8a56f509a859c6cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ced49c8b186f6e8a56f509a859c6cbc">&#9670;&#160;</a></span>AddKnownFaceFeatures() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FaceRecognizer::AddKnownFaceFeatures </td>
+          <td class="memname">void face::FaceRecognizer::AddKnownFaceFeatures </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>known_face_name</em>, </td>
@@ -225,12 +225,12 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00176">176</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00178">178</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac629a5d5487a793ddd305ee6f5ff6b34" name="ac629a5d5487a793ddd305ee6f5ff6b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac629a5d5487a793ddd305ee6f5ff6b34">&#9670;&#160;</a></span>DecodeFaceFeature()</h2>
+<a id="a70aab59c6fc5ad1fa3414c6aa5889a17" name="a70aab59c6fc5ad1fa3414c6aa5889a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70aab59c6fc5ad1fa3414c6aa5889a17">&#9670;&#160;</a></span>DecodeFaceFeature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +239,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">face_features_t FaceRecognizer::DecodeFaceFeature </td>
+          <td class="memname">face_features_t face::FaceRecognizer::DecodeFaceFeature </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>face_features_str</em></td><td>)</td>
@@ -263,12 +263,12 @@ Protected Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The decoded face feature vector as a vector of floats.</dd></dl>
 <p>This function decodes a face feature vector from a string that was encoded using the EncodeFaceFeature function. </p>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00203">203</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00202">202</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab1e32cc49a43c7407e5693a3b2527969" name="ab1e32cc49a43c7407e5693a3b2527969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1e32cc49a43c7407e5693a3b2527969">&#9670;&#160;</a></span>EncodeFaceFeature()</h2>
+<a id="ad84e150680082ea19aedd25e7f012c5f" name="ad84e150680082ea19aedd25e7f012c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84e150680082ea19aedd25e7f012c5f">&#9670;&#160;</a></span>EncodeFaceFeature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +277,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string FaceRecognizer::EncodeFaceFeature </td>
+          <td class="memname">std::string face::FaceRecognizer::EncodeFaceFeature </td>
           <td>(</td>
           <td class="paramtype">face_features_t&#160;</td>
           <td class="paramname"><em>face_features</em></td><td>)</td>
@@ -305,14 +305,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3587174a85d7ff4c06d0e3e6d593f59" name="ae3587174a85d7ff4c06d0e3e6d593f59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3587174a85d7ff4c06d0e3e6d593f59">&#9670;&#160;</a></span>GetFaceFeatureFromImg()</h2>
+<a id="a9bd1ef0727490e1abb650ecc43718ff3" name="a9bd1ef0727490e1abb650ecc43718ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd1ef0727490e1abb650ecc43718ff3">&#9670;&#160;</a></span>GetFaceFeatureFromImg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">face_features_t FaceRecognizer::GetFaceFeatureFromImg </td>
+          <td class="memname">face_features_t face::FaceRecognizer::GetFaceFeatureFromImg </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>image_path</em></td><td>)</td>
@@ -330,7 +330,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The face feature vector as a vector of floats. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00015">15</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00021">21</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00206">206</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00240">240</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
 
 </div>
 </div>
@@ -384,18 +384,18 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00201">201</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00234">234</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
 
 </div>
 </div>
-<a id="a54cc8c73454b1c1877b8f7e0b5c54a5f" name="a54cc8c73454b1c1877b8f7e0b5c54a5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54cc8c73454b1c1877b8f7e0b5c54a5f">&#9670;&#160;</a></span>GetQueryFaceFeaturesFromImg()</h2>
+<a id="a250ed7f38347dde4cc1a0221b52db738" name="a250ed7f38347dde4cc1a0221b52db738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250ed7f38347dde4cc1a0221b52db738">&#9670;&#160;</a></span>GetQueryFaceFeaturesFromImg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; face_features_t &gt; FaceRecognizer::GetQueryFaceFeaturesFromImg </td>
+          <td class="memname">std::vector&lt; face_features_t &gt; face::FaceRecognizer::GetQueryFaceFeaturesFromImg </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>image_path</em></td><td>)</td>
@@ -414,18 +414,58 @@ Protected Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A vector of face feature vectors, each represented as a vector of floats.</dd></dl>
 <p>This function returns a vector of face feature vectors extracted from the specified image file. This function can be time-consuming, taking 4-500ms to complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00053">53</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00059">59</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aab46a4fecec89686891205194a5c9af3" name="aab46a4fecec89686891205194a5c9af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab46a4fecec89686891205194a5c9af3">&#9670;&#160;</a></span>GetSimilarity() <span class="overload">[1/2]</span></h2>
+<a id="aa4d82ea9ead4d51457512ba7663fa68b" name="aa4d82ea9ead4d51457512ba7663fa68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d82ea9ead4d51457512ba7663fa68b">&#9670;&#160;</a></span>GetSimilarity() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float FaceRecognizer::GetSimilarity </td>
+          <td class="memname">float face::FaceRecognizer::GetSimilarity </td>
+          <td>(</td>
+          <td class="paramtype">const face_features_t &amp;&#160;</td>
+          <td class="paramname"><em>face_feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; face_features_t &gt;&#160;</td>
+          <td class="paramname"><em>query_face_features</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the similarity between a given face feature and a list of query face features. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face_feature</td><td>A reference to the face feature to compare. </td></tr>
+    <tr><td class="paramname">query_face_features</td><td>A vector of query face features, each represented as a vector of floats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The similarity score between the face feature and the query face features, as a float. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00101">101</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a672430969fac5411a1bbc3480d44a8fe" name="a672430969fac5411a1bbc3480d44a8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672430969fac5411a1bbc3480d44a8fe">&#9670;&#160;</a></span>GetSimilarity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float face::FaceRecognizer::GetSimilarity </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>face_feature_str</em>, </td>
@@ -454,58 +494,18 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The similarity score between the face feature and the query face features, as a float. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00085">85</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00091">91</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6fd2907a1c061eff3feaff137121051a" name="a6fd2907a1c061eff3feaff137121051a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd2907a1c061eff3feaff137121051a">&#9670;&#160;</a></span>GetSimilarity() <span class="overload">[2/2]</span></h2>
+<a id="a2763c641c2314eebba5c2f28984b46de" name="a2763c641c2314eebba5c2f28984b46de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2763c641c2314eebba5c2f28984b46de">&#9670;&#160;</a></span>GetSimilarityFromImg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float FaceRecognizer::GetSimilarity </td>
-          <td>(</td>
-          <td class="paramtype">face_features_t &amp;&#160;</td>
-          <td class="paramname"><em>face_feature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; face_features_t &gt;&#160;</td>
-          <td class="paramname"><em>query_face_features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the similarity between a given face feature and a list of query face features. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">face_feature</td><td>A reference to the face feature to compare. </td></tr>
-    <tr><td class="paramname">query_face_features</td><td>A vector of query face features, each represented as a vector of floats. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The similarity score between the face feature and the query face features, as a float. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00095">95</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a88ee850ef0fc38a2ccad362d8d88095f" name="a88ee850ef0fc38a2ccad362d8d88095f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88ee850ef0fc38a2ccad362d8d88095f">&#9670;&#160;</a></span>GetSimilarityFromImg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float FaceRecognizer::GetSimilarityFromImg </td>
+          <td class="memname">float face::FaceRecognizer::GetSimilarityFromImg </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>face_feature1</em>, </td>
@@ -534,7 +534,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The similarity score between the face feature and the image file, as a float. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00127">127</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00130">130</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
@@ -571,18 +571,58 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether the similarity score indicates a match. the smaller the better </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00189">189</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00220">220</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
 
 </div>
 </div>
-<a id="a14f40a7cb5b349c9aeb366d37c34614b" name="a14f40a7cb5b349c9aeb366d37c34614b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f40a7cb5b349c9aeb366d37c34614b">&#9670;&#160;</a></span>Match() <span class="overload">[1/2]</span></h2>
+<a id="ac3ed85793aaa5bc152aad810339f419f" name="ac3ed85793aaa5bc152aad810339f419f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ed85793aaa5bc152aad810339f419f">&#9670;&#160;</a></span>Match() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool FaceRecognizer::Match </td>
+          <td class="memname">bool face::FaceRecognizer::Match </td>
+          <td>(</td>
+          <td class="paramtype">const face_features_t &amp;&#160;</td>
+          <td class="paramname"><em>face_feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; face_features_t &gt;&#160;</td>
+          <td class="paramname"><em>query_face_features</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a given face feature matches any of the query face features. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face_feature</td><td>A reference to the face feature to compare. </td></tr>
+    <tr><td class="paramname">query_face_features</td><td>A vector of query face features, each represented as a vector of floats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether a match was found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00126">126</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf104d7d5d2729a8dfde58c49b44af05" name="abf104d7d5d2729a8dfde58c49b44af05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf104d7d5d2729a8dfde58c49b44af05">&#9670;&#160;</a></span>Match() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool face::FaceRecognizer::Match </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>face_feature_str</em>, </td>
@@ -611,58 +651,18 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether a match was found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00114">114</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00119">119</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4e89859a7ffd80488df53f24d1d61580" name="a4e89859a7ffd80488df53f24d1d61580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e89859a7ffd80488df53f24d1d61580">&#9670;&#160;</a></span>Match() <span class="overload">[2/2]</span></h2>
+<a id="a1b3f67a72000a11128e859f97c2c1be6" name="a1b3f67a72000a11128e859f97c2c1be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3f67a72000a11128e859f97c2c1be6">&#9670;&#160;</a></span>RecognizeImgByKnownFaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool FaceRecognizer::Match </td>
-          <td>(</td>
-          <td class="paramtype">face_features_t &amp;&#160;</td>
-          <td class="paramname"><em>face_feature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; face_features_t &gt;&#160;</td>
-          <td class="paramname"><em>query_face_features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether a given face feature matches any of the query face features. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">face_feature</td><td>A reference to the face feature to compare. </td></tr>
-    <tr><td class="paramname">query_face_features</td><td>A vector of query face features, each represented as a vector of floats. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether a match was found. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00122">122</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af808bf25178514d19af2eaedc805fdf4" name="af808bf25178514d19af2eaedc805fdf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af808bf25178514d19af2eaedc805fdf4">&#9670;&#160;</a></span>RecognizeImgByKnownFaces()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FaceRecognizer::RecognizeImgByKnownFaces </td>
+          <td class="memname">int face::FaceRecognizer::RecognizeImgByKnownFaces </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>image_path</em>, </td>
@@ -670,7 +670,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype">std::string *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -698,13 +698,13 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An integer indicating the number of matches found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00140">140</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8cpp_source.html#l00142">142</a> of file <a class="el" href="face_8cpp_source.html">face.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="adef00ac0afd0801baf0bad941a246213" name="adef00ac0afd0801baf0bad941a246213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adef00ac0afd0801baf0bad941a246213">&#9670;&#160;</a></span>matched_max_threshold</h2>
+<a id="a01db85b8df6ed6e84e04d29634026fdf" name="a01db85b8df6ed6e84e04d29634026fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01db85b8df6ed6e84e04d29634026fdf">&#9670;&#160;</a></span>matched_max_threshold</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +713,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float FaceRecognizer::matched_max_threshold = 0.4</td>
+          <td class="memname">float face::FaceRecognizer::matched_max_threshold = 0.4</td>
         </tr>
       </table>
   </td>
@@ -726,7 +726,7 @@ Protected Member Functions</h2></td></tr>
 <p>The maximum similarity threshold that indicates a match. </p>
 <p >This static member variable specifies the maximum similarity threshold that indicates a match. The default value is set to the threshold used by the dlib face recognition model, which achieves an accuracy of 99.38% on the LFW face recognition benchmark. </p>
 
-<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00198">198</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face_8h_source.html#l00231">231</a> of file <a class="el" href="face_8h_source.html">face.h</a>.</p>
 
 </div>
 </div>

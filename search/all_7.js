@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['recognizeimgbyknownfaces_0',['RecognizeImgByKnownFaces',['../classface_1_1FaceRecognizer.html#af808bf25178514d19af2eaedc805fdf4',1,'face::FaceRecognizer']]]
+  ['recognizeimgbyknownfaces_0',['RecognizeImgByKnownFaces',['../classface_1_1FaceRecognizer.html#a1b3f67a72000a11128e859f97c2c1be6',1,'face::FaceRecognizer']]]
 ];
