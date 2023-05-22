@@ -1,9 +1,9 @@
-
 [![CodeFactor](https://www.codefactor.io/repository/github/nevermoreluo/face_lib/badge)](https://www.codefactor.io/repository/github/nevermoreluo/face_lib)
 [![Build Status](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/cmake.yml)
 [![Doc Status](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml/badge.svg)](https://github.com/nevermoreluo/face_lib/actions/workflows/doc.yml)
 [![LICENSE](https://img.shields.io/github/license/nevermoreluo/face_lib?style=plastic)](https://github.com/nevermoreluo/face_lib/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nevermoreluo/face_lib?style=plastic)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib?ref=badge_shield)
 
 ### 目的
 由于工作中频繁遇到很多第三方的人脸识别方案需要整合，因此考虑自己造轮子看下实现复杂度以及方便后续项目开展时做一个备选方案。
@@ -35,4 +35,7 @@ GetFaceFeatureFromImg从图片读取生成人脸特征值，用户可以选择�
 数据集文件可以在http://dlib.net/files/下载也可以在项目的res目录内获得
 
 
+
+
+## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnevermoreluo%2Fface_lib?ref=badge_large)
